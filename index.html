@@ -152,6 +152,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-anaconda 创建需要的python环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="anaconda-创建需要的python环境"><a href="#anaconda-创建需要的python环境" class="headerlink" title="anaconda 创建需要的python环境"></a>anaconda 创建需要的python环境</h3><ol>
+<li><p>*** 打开anaconda的prompt，即终端**</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda create --name &quot;环境的名字&quot; python&#x3D;&#x3D;&quot;版本号&quot;</span><br><span class="line">#例如创建名为tf，python版本为3.6的python环境</span><br><span class="line">conda create --name tf python&#x3D;&#x3D;3.6</span><br></pre></td></tr></table></figure>
+
+<p>创建过程中会要求你输入y，接下来就会自动下载对应的python环境，下载好后会让你激活并进入创建的环境。使用activate 环境名字。例如这里的activate tf。进入后你会看到命令的最左边的小括号里就是你创建的环境的名字。</p>
+</li>
+<li><p><strong>进入后检测当前的python版本，输入python回车，就能看到你创建的python环境是否是你上一步中安装的环境。</strong></p>
+</li>
+<li><p><strong>退出创建的环境</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>查看当前anaconda的环境</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --evn</span><br></pre></td></tr></table></figure>
+
+<p>这个命令可以让你看到在anaconda下的环境名字</p>
+</li>
+<li><p><strong>更换源为国内源</strong>（为了提高下载速度）</p>
+<p>临时使用国内源下载包或库，在安装的命令后面加上-i url（即源的地址）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install jieba -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>一些pip命令</strong></p>
+<p>更新pip指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+<p>查看pip下安装的库列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure>
+
+<p>安装某个包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install 包名</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/13/anaconda%20%E5%88%9B%E5%BB%BA%E9%9C%80%E8%A6%81%E7%9A%84python%E7%8E%AF%E5%A2%83/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="name-使用Stanford-NER进行中文文本的分词" class="article article-type-name  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -213,233 +293,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/08/%E4%BD%BF%E7%94%A8Stanford-NER%E8%BF%9B%E8%A1%8C%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%86%E8%AF%8D/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-使用Stanford NER进行中文文本的分词1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="使用Stanford-NER进行中文文本的分词"><a href="#使用Stanford-NER进行中文文本的分词" class="headerlink" title="使用Stanford NER进行中文文本的分词"></a>使用Stanford NER进行中文文本的分词</h1><h3 id="一、在Standford-官网下载stanford的包"><a href="#一、在Standford-官网下载stanford的包" class="headerlink" title="一、在Standford 官网下载stanford的包"></a>一、在Standford 官网下载stanford的包</h3><p>​        <a target="_blank" rel="noopener" href="https://nlp.stanford.edu/software/CRF-NER.shtml#Download%EF%BC%8C%E5%9C%A8%E8%AF%A5%E7%BD%91%E7%AB%99%E4%B8%8B%E8%BD%BD%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E5%8C%85%E5%90%8E%E8%A7%A3%E5%8E%8B%E3%80%82%E5%AF%B9%E4%BA%8E%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86%EF%BC%8C%E8%BF%98%E9%9C%80%E8%A6%81%E4%B8%8B%E8%BD%BD%E4%B8%AD%E6%96%87%E5%A4%84%E7%90%86%E7%9A%84%E6%A8%A1%E5%9E%8Bstanford-chinese-corenlp-2222-11-14-models.jar%EF%BC%8C%E6%AD%A4%E5%A4%84%E4%BD%A0%E4%B8%8B%E8%BD%BD%E4%B8%8B%E6%9D%A5%E7%9A%84%E5%8C%85%E7%9A%84%E5%90%8D%E5%AD%97%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%92%8C%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97%E7%9B%B8%E5%90%8C%EF%BC%8C%E8%8B%A5%E6%98%AF%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%E4%B8%8B%E8%BD%BD%E6%97%B6%E7%9A%84%E5%8C%85%E5%90%8D%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%97%B6%E4%BC%9A%E6%8A%A5%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%96%87%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8C%E6%9C%80%E5%A5%BD%E6%98%AF%E6%94%B9%E6%88%90%E6%88%91%E7%9A%84%E8%BF%99%E7%A7%8D%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F%E3%80%82">https://nlp.stanford.edu/software/CRF-NER.shtml#Download，在该网站下载所需要的包后解压。对于中文文本的分析处理，还需要下载中文处理的模型stanford-chinese-corenlp-2222-11-14-models.jar，此处你下载下来的包的名字不一定和我的名字相同，若是直接使用下载时的包名，使用时会报没有中文处理模型的文件，最好是改成我的这种命名方式。</a></p>
-<p>注意：下载下来的中文模型需要放到stanford-corenlp这个文件的根目录下，要不然在调用的时候找不到路径。</p>
-<h3 id="二、本地环境配置"><a href="#二、本地环境配置" class="headerlink" title="二、本地环境配置"></a>二、本地环境配置</h3><p><strong>1、</strong> java环境配置</p>
-<p>​        Stanford的NLP工具需要有java环境的支持，并且jdk的版本需要1.8以上。此处我使用的JDK版本是jdk-8u211-windows-x64.exe，以下是安装时的配置。</p>
-<ul>
-<li>我的jdk是安装在I:\eclipse\JDK install目录下，所以创建系统变量的时候，JAVA_HOME的值为I:\eclipse\JDK install</li>
-<li>CLASSPATH的值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</li>
-<li>PATH的值：%JAVA_HOME%\bin和%JAVA_HOME%\jre\bin</li>
-</ul>
-<p><strong>2、</strong>验证java环境</p>
-<ul>
-<li> win+r  键入cmd</li>
-<li> 分别输入java -version、java、javac都能出现正确信息即配置成功</li>
-</ul>
-<p><img src="C:\Users\13778\AppData\Roaming\Typora\typora-user-images\image-20201208211810980.png" alt="image-20201208211810980"></p>
-<p><strong>3、</strong>python环境配置并验证</p>
-<p>​        在python官网选择python版本下载并进行安装，最好下载.exe文件安装，这样可以在安装时自动配置系统变量。</p>
-<p>验证：</p>
-<ul>
-<li>win+r键入cmd</li>
-<li>输入python，此时终端会输出你的python版本并进入python环境，即<img src="C:\Users\13778\AppData\Roaming\Typora\typora-user-images\image-20201208212248188.png" alt="image-20201208212248188"></li>
-<li>若是有多个python版本还可以使用where python查看python版本的位置，即<img src="C:\Users\13778\AppData\Roaming\Typora\typora-user-images\image-20201208212352782.png" alt="image-20201208212352782"></li>
-</ul>
-<h3 id="三、使用corenlp进行中文分词"><a href="#三、使用corenlp进行中文分词" class="headerlink" title="三、使用corenlp进行中文分词"></a>三、使用corenlp进行中文分词</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> stanfordcorenlp <span class="keyword">import</span> StanfordCoreNLP</span><br><span class="line"><span class="comment">#I:/standford NER/stanford-corenlp-4.2.0/这个是本地模型的位置，zh表示中文模型处理</span></span><br><span class="line">nlp = StanfordCoreNLP(<span class="string">r&#x27;I:/standford NER/stanford-corenlp-4.2.0/&#x27;</span>, lang=<span class="string">&#x27;zh&#x27;</span>)</span><br><span class="line"></span><br><span class="line">sentence = <span class="string">&quot;小明是斯坦福大学的一名研究生，他的专业是计算机科学与技术。&quot;</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;------word_tokenize分词-----&quot;</span>)</span><br><span class="line">print(nlp.word_tokenize(sentence))</span><br><span class="line">print(<span class="string">&quot;------pos_tag进行分词并进行词性标注-----&quot;</span>)</span><br><span class="line">print(nlp.pos_tag(sentence))</span><br><span class="line">print(<span class="string">&quot;------ner命名实体识别-----&quot;</span>)</span><br><span class="line">print(nlp.ner(sentence))</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="C:\Users\13778\AppData\Roaming\Typora\typora-user-images\image-20201208214826438.png" alt="image-20201208214826438"></p>
-<p>​        总的来说，该工具的分词效果确实确实挺不错，但有一个缺点是在加载模型的时候比较慢，这就导致在处理数据时需要花费更多的时间。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/08/%E4%BD%BF%E7%94%A8Stanford%20NER%E8%BF%9B%E8%A1%8C%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%86%E8%AF%8D1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2020/11/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-11-09T12:59:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>这是第一章</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>这是第二段</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//代码块</span><br><span class="line">print(<span class="string">&quot;这是hexo的测试文章&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/11/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/11/09/hello-world/" class="archive-article-date">
-  	<time datetime="2020-11-09T12:55:16.822Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/11/09/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -560,10 +413,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
-              </li>
             
             <div class="clearfix"></div>
           </ul>
